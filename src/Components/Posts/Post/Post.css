@@ -1,0 +1,33 @@
+.post{
+    padding: 25px;
+    width: 650px;
+    height: 500px;
+    border: 1px solid #0000006f;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px #00000074;
+    animation-name: post;
+    animation-duration: 0.5s;
+}
+
+.post h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.post h2{
+    text-align: justify;
+}
+
+@keyframes post {
+  from {
+    opacity: 0.2;
+
+    transform: scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:scale(1);
+  }
+}

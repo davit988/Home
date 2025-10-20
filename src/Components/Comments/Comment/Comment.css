@@ -1,0 +1,41 @@
+.comment {
+  padding: 25px;
+  border: 1px solid #0000007a;
+  border-radius: 25px;
+  width: 450px;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  box-shadow: 10px 10px 10px #0000007a;
+  transform: scale(1);
+  transition: all 0.5s linear;
+  animation-name: com;
+  animation-duration: 0.5s  ;
+}
+
+.comment:hover{
+  transform: scale(1.1);
+}
+
+.id {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes com {
+  from {
+    opacity: 0.2;
+
+    transform: scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:scale(1);
+  }
+}

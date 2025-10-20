@@ -2131,7 +2131,7 @@ export const users = [
   },
 ];
 
-const posts = [
+export const posts = [
   {
     id: 1,
     title: "His mother had always taught him",
@@ -2495,7 +2495,7 @@ const posts = [
   },
 ];
 
-const comments = [
+export const comments = [
   {
     id: 1,
     body: "This is some awesome thinking!",

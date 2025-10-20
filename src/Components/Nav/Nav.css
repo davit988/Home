@@ -1,0 +1,39 @@
+nav {
+  padding: 45px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border: 1px solid #00000043;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px #00000043;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.active {
+  color: red;
+  animation-name: all;
+  animation-duration: 0.5s;
+    transform: scale(1.1);
+  
+}
+
+@keyframes all {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
