@@ -1,11 +1,9 @@
 import "./User.css";
-
+import { NavLink } from "react-router-dom";
 const User = ({ elm }) => {
   return (
     <>
-
-
-      <div className="user">
+      <NavLink to={`/Users/${elm.firstName}`} className="user">
         <h1>
           First Name <span>{elm.firstName}</span>
         </h1>
@@ -15,7 +13,7 @@ const User = ({ elm }) => {
         <p>
           Age <span>{elm.age}</span>
         </p>
-      </div>
+      </NavLink>
     </>
   );
 };

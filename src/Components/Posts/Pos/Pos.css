@@ -1,0 +1,37 @@
+.posInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.Pos {
+  padding: 45px;
+  max-width: 700px;
+  height: fit-content;
+  border: 1px solid #0000006f;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px #00000074;
+  animation-name: post;
+  animation-duration: 0.5s;
+  color: #000;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h2 {
+  text-align: justify;
+}
+h3 {
+  margin-top: 60px;
+  text-align: end;
+  font-weight: 400;
+}
+
+h3 span {
+  font-weight: 900;
+}

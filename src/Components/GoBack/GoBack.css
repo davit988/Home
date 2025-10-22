@@ -1,0 +1,12 @@
+.goBack {
+  padding: 15px 45px;
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 35px;
+  font-size: 25px;
+  cursor: pointer;
+  animation-name: scale;
+  animation-duration: 0.5s;
+  box-shadow: 10px 15px 25px #00000047;
+}

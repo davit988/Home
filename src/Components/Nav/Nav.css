@@ -1,5 +1,7 @@
 nav {
   padding: 45px;
+  position: sticky;
+  top: 0;
 }
 
 .nav {
@@ -24,8 +26,7 @@ nav {
   color: red;
   animation-name: all;
   animation-duration: 0.5s;
-    transform: scale(1.1);
-  
+  transform: scale(1.1);
 }
 
 @keyframes all {
