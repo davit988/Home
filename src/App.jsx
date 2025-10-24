@@ -16,8 +16,8 @@ function App({ users, posts, comments }) {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
 
-          <Route path="/Users" element={<Users users={users} />} />
-          <Route path="/Users/:name" element={<Use users={users} />} />
+          <Route path="/Users" element={<Users/>} />
+          <Route path="/Users/:name" element={<Use/>} />
 
           <Route path="/Posts" element={<Posts posts={posts} />} />
           <Route path="/Posts/:title" element={<Pos posts={posts} />} />

@@ -8,6 +8,8 @@ const Pos = ({ posts }) => {
 
   let post = posts.find((elm) => elm.title === title);
 
+  
+
   return (
     <section>
       <div className="container">

@@ -1,6 +1,5 @@
 import "./Comments.css";
 import Comment from "./Comment/Comment";
-import Nav from "../Nav/Nav";
 const Comments = ({ comments }) => {
   console.log(comments);
 

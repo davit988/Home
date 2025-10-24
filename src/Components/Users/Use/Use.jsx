@@ -1,13 +1,23 @@
 import { useParams } from "react-router-dom";
 import GoBack from "../../GoBack/GoBack";
+import { useEffect, useState } from "react";
 
 import "./Use.css";
 
-const Use = ({ users }) => {
+const Use = () => {
   const { name } = useParams();
 
-  let user = users.find((elm) => elm.firstName === name);
+  const [userr, setUserr] = useState([]);
 
+  useEffect(() => {
+    fetch("https://dummyjson.com/users")
+      .then((res) => res.json())
+      .then((json) => setUserr(json.users));
+  }, []);
+
+  let usersss = userr.find((elm) => elm.firstName === name);
+  console.log(usersss);
+ 
   return (
     <section>
       <div className="container">
@@ -15,19 +25,19 @@ const Use = ({ users }) => {
           <div className="use">
             <h1>User</h1>
             <h2>
-              <span>First Name -</span> {user.firstName}
+              <span>First Name -</span> {}
             </h2>
             <h2>
-              <span>Last Name -</span> {user.lastName}
+              <span>Last Name -</span> 
             </h2>
             <h2>
-              <span>Maiden Name -</span> {user.maidenName}
+              <span>Maiden Name -</span> 
             </h2>
             <p>
-              <span>Age -</span> {user.age}
+              <span>Age -</span> 
             </p>
             <p>
-              <span>Email -</span> {user.email}
+              <span>Email -</span> 
             </p>
           </div>
           <GoBack />
