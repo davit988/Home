@@ -1,7 +1,17 @@
 import Post from "./Post/Post";
 import "./Posts.css";
+import { useEffect, useState } from "react";
 
-const Posts = ({ posts }) => {
+const Posts = () => {
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    fetch("https://dummyjson.com/posts")
+      .then((res) => res.json())
+      .then((json) => setPosts(json.posts));
+  }, []);
+
+  console.log(posts);
+
   return (
     <>
       <section>

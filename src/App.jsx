@@ -9,7 +9,7 @@ import Use from "./Components/Users/Use/Use";
 import Pos from "./Components/Posts/Pos/Pos";
 import "./App.css";
 
-function App({ users, posts, comments }) {
+function App() {
   return (
     <>
       <Routes>
@@ -17,12 +17,12 @@ function App({ users, posts, comments }) {
           <Route index element={<Home />} />
 
           <Route path="/Users" element={<Users/>} />
-          <Route path="/Users/:name" element={<Use/>} />
+          <Route path="/Users/:id" element={<Use/>} />
 
-          <Route path="/Posts" element={<Posts posts={posts} />} />
-          <Route path="/Posts/:title" element={<Pos posts={posts} />} />
+          <Route path="/Posts" element={<Posts  />} />
+          <Route path="/Posts/:id" element={<Pos  />} />
 
-          <Route path="/Comments" element={<Comments comments={comments} />} />
+          <Route path="/Comments" element={<Comments  />} />
           <Route path="*" element={<NotFound />} />
           
         </Route>

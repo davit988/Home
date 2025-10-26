@@ -1,7 +1,8 @@
 nav {
-  padding: 45px;
   position: sticky;
+  padding: 45px;
   top: 0;
+  z-index: 99;
 }
 
 .nav {
@@ -13,6 +14,7 @@ nav {
   padding: 25px;
   border-radius: 25px;
   box-shadow: 10px 10px 15px #00000043;
+  backdrop-filter: blur(17px);
 }
 
 .link {

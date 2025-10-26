@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const User = ({ elm }) => {
   return (
     <>
-      <NavLink to={`/Users/${elm.firstName}`} className="user">
+      <NavLink to={`/Users/${elm.id}`} className="user">
         <h1>
           First Name <span>{elm.firstName}</span>
         </h1>
